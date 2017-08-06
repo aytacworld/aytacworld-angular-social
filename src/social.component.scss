@@ -1,0 +1,10 @@
+.social {
+  padding: 15px;
+  justify-content: center;
+
+  > * {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
