@@ -59,7 +59,7 @@ export class App {
 
 ## Examples
 
-[http://embed.plnkr.co/](http://embed.plnkr.co/)
+[http://embed.plnkr.co/XYlnXm/](http://embed.plnkr.co/XYlnXm/)
 
 ## MIT License
 

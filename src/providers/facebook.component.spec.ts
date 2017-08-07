@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FacebookComponent } from './facebook.component';
-import { SocialButtonComponent } from '../mock.component';
+import { SocialButtonComponent } from '../../tools/mock-helper';
 
 describe('FacebookComponent', () => {
   let fixture: ComponentFixture<FacebookComponent>;

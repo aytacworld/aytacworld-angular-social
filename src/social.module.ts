@@ -1,6 +1,6 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { SocialComponent } from './social.component';
-import { FacebookComponent, GooglePlusComponent, TwitterComponent } from './providers';
+import { FacebookComponent, GooglePlusComponent, TwitterComponent } from './providers/index';
 import { SocialButtonComponent } from './social-button.component';
 
 @NgModule({
