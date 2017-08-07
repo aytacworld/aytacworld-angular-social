@@ -15,9 +15,9 @@ export class TwitterComponent implements OnInit {
   ngOnInit (): void {
     const twitterUrl = `https://twitter.com/intent/tweet?`;
     const hashtags = `hashtags=${encodeURIComponent((this.hashtags || []).join(','))}`;
-    const text = `text=${encodeURIComponent(this.title)}`;
+    const text = `text=${encodeURIComponent(this.title || '')}`;
     const url = `url=${encodeURIComponent(this.url)}`;
-    const via = `via=${encodeURIComponent(this.via)}`;
-    this.tweetUrl = `${twitterUrl}&${url}&${text}&${hashtags}&${via}`;
+    const via = `via=${encodeURIComponent(this.via || '')}`;
+    this.tweetUrl = `${twitterUrl}${url}&${text}&${hashtags}&${via}`;
   }
 }
