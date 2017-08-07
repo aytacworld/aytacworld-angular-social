@@ -1,7 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-declare var twttr;
-
 @Component({
   selector: 'aw-social',
   styleUrls: ['./social.component.scss'],

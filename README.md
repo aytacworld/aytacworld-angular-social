@@ -1,8 +1,6 @@
 # aytacworld-angular-social
 
-Fork this project to create your own angular plugins
-
-Don't forget to update `package.json`.
+Share links to social media services, currently it supports only Twitter, Facebook and GooglePlus.
 
 ## Install
 
@@ -36,9 +34,13 @@ app.component.ts
 ```typescript
 @Component({
   selector: 'my-app',
-  template: `update this one`,
+  template: `<aw-social [title]="myTitle" [url]="myUrl" [hashtags]="myTags" [via]="myVia"></aw-social>`,
 })
 export class App {
+  myTitle: string = 'My awesome title';
+  myUrl: string = 'http://www.example.com';
+  myTags: Array<string> = ['awesome', 'example'];
+  myVia: string = '@userX';
 }
 ```
 
@@ -46,7 +48,10 @@ export class App {
 
 |Input       |  Description   |  Type  |  Default  |
 |------------|----------------|--------|-----------|
-|input    |  desc | type | default value |
+|title    |  Title to send to the social plugin | string | (empty) |
+|url    |  Url to send to the social plugin | string | (empty) |
+|hashtags    |  Hashtags to send to the social plugin | string[] | (empty) |
+|via    |  Via to send to the social plugin | string | (empty) |
 
 ## Test
 
